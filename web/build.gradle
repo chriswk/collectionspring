@@ -1,7 +1,7 @@
 apply plugin: 'tomcat'
 
 dependencies {
-	compile(ext.libs.javax.servlet.api, provided)
+	providedCompile ext.libs.javax.servlet.api
     compile ext.libs.cglib,
             ext.libs.spring.webmvc,
             ext.libs.scalate.core,

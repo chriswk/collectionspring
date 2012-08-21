@@ -11,7 +11,9 @@ import javax.servlet.ServletRegistration;
 
 public class CollectionInitializer implements WebApplicationInitializer {
     private static final Logger LOGGER = LoggerFactory.getLogger(CollectionInitializer.class);
-	public void onStartup(ServletContext servletContext) {
+
+    @Override
+    public void onStartup(ServletContext servletContext) {
 		LOGGER.info("Starting up");
         AnnotationConfigWebApplicationContext mvcContext = new AnnotationConfigWebApplicationContext();
 		mvcContext.register(CollectionMvcConfig.class);

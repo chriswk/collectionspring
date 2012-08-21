@@ -1,0 +1,28 @@
+buildscript {
+	repositories {
+		maven { url 'http://repo.springsource.org/plugins-release' }
+    }
+    dependencies {
+        classpath 'org.springframework.build.gradle:docbook-reference-plugin:0.1.5'
+    }
+}
+
+configure(allprojects) {
+	apply plugin: 'java'
+	apply plugin: 'idea'
+	apply from: "${rootDir}/dependencies.gradle"
+	group = 'com.chriswk.collection'
+
+	sourceCompatability = 1.7
+	targetCompatability = 1.7
+
+	repositories {
+		mavenCentral()
+		mavenLocal()
+		maven { url "http://repo.springsource.org/libs-release" }
+	}
+}
+
+task wrapper(type: Wrapper, description : "Generates the wrapper for ${gradleVersion}") {
+	gradleVersion = gradleVersion
+}

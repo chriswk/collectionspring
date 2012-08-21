@@ -2,7 +2,14 @@ apply plugin: 'tomcat'
 
 dependencies {
 	compile(ext.libs.javax.servlet.api, provided)
-    compile ext.libs.spring.webmvc
+    compile ext.libs.cglib,
+            ext.libs.spring.webmvc,
+            ext.libs.scalate.core,
+            ext.libs.scalate.web,
+            ext.libs.jackson.mapper.asl,
+            ext.libs.logging.slf4j.api,
+            ext.libs.logging.logback.core,
+            ext.libs.logging.logback.classic
 	testCompile ext.libs.testing.junit,
 	 			ext.libs.spring.test,
 	 			ext.libs.testing.hamcrest.core,

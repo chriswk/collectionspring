@@ -23,6 +23,12 @@ ext.libs = [
 		web: "org.springframework.security:spring-security-web:$springSecurityVersion",
 		config: "org.springframework.security:spring-security-config:$springSecurityVersion"
 	],
+    scalate: [
+        web: "org.fusesource.scalate:scalate-web:$scalateVersion",
+        project: "org.fusesource.scalate:scalate-project:$scalateVersion",
+        war: "org.fusesource.scalate:scalate-war:$scalateVersion",
+        core: "org.fusesource.scalate:scalate-core:$scalateVersion"
+    ],
 	hibernate: [
 		core: "org.hibernate:hibernate-core:$hibernateVersion",
 		entitymanager: "org.hibernate:hibernate-entitymanager:$hibernateVersion",
@@ -42,9 +48,9 @@ ext.libs = [
 	logging: [
 		slf4j: [
 			api: "org.slf4j:slf4j-api:$slf4jVersion",
-			jcl: "org.slf4j:jcl-over-slf4j:$slf4jVersion"
 		],
 		logback: [
+            core: "ch.qos.logback:logback-core:$logbackVersion",
 			classic: "ch.qos.logback:logback-classic:$logbackVersion"
 		]
 	],
@@ -73,6 +79,11 @@ ext.libs = [
             core: "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
             logging: "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
             jasper: "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+        ]
+    ],
+    jackson : [
+        mapper: [
+            asl : "org.codehaus.jackson:jackson-mapper-asl:${jacksonaslVersion}"
         ]
     ]
 ]

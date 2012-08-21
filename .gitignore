@@ -170,3 +170,9 @@ pip-log.txt
 *.iml
 *.ipr
 *.iws
+
+
+######
+## Gradle
+#####
+.gradle

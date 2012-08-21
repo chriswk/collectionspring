@@ -1,0 +1,11 @@
+apply plugin: 'tomcat'
+
+dependencies {
+	compile ext.libs.spring.webmvc
+	testCompile ext.libs.testing.junit,
+	 			ext.libs.spring.test,
+	 			ext.libs.testing.hamcrest.core,
+	 			ext.libs.testing.hamcrest.library,
+	 			ext.libs.testing.mockito.core
+
+}

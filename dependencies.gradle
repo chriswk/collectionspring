@@ -1,0 +1,71 @@
+ext.libs = [
+	commons: [
+		dbcp: "commons-dbcp:commons-dbcp:$commonsDbcpVersion",
+		pool: "commons-pool:commons-pool:$commonsPoolVersion",
+		lang3: "org.apache.commons:commons-lang3:$commonsLang3Version",
+		codec: "commons-codec:commons-codec:$commonsCodecVersion"
+	],
+	cglib: "cglib:cglib-nodep:$cglibVersion",
+	spring: [
+		core: "org.springframework:spring-core:$springVersion",
+		context: "org.springframework:spring-context:$springVersion",
+		webmvc: "org.springframework:spring-webmvc:$springVersion",
+		web: "org.springframework:spring-web:$springVersion",
+		oxm: "org.springframework:spring-oxm:$springVersion",
+		tx: "org.springframework:spring-tx:$springVersion",
+		aop: "org.springframework:spring-aop:$springVersion",
+		aspects: "org.springframework:spring-aspects:$springVersion",
+		jdbc: "org.springframework:spring-jdbc:$springVersion",
+		orm:"org.springframework:spring-orm:$springVersion",
+		test:"org.springframework:spring-test:$springVersion"
+	],
+	springsecurity: [
+		web: "org.springframework.security:spring-security-web:$springSecurityVersion",
+		config: "org.springframework.security:spring-security-config:$springSecurityVersion"
+	],
+	hibernate: [
+		core: "org.hibernate:hibernate-core:$hibernateVersion",
+		entitymanager: "org.hibernate:hibernate-entitymanager:$hibernateVersion",
+		validator: "org.hibernate:hibernate-validator:$hibernateValidatorVersion",
+		jpamodelgen: "org.hibernate:hibernate-jpamodelgen:1.2.0.FINAL",
+		persistence: "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:$hibernateJpaVersion"
+	],
+	databases: [
+		h2: "com.h2database:h2:$h2Version",
+		mysql: "mysql:mysql-connctor-java:$mysqlVersion",
+		hsqldb: "org.hsqldb:hsqldb:$hsqldbVersion",
+		neo4j: [
+			neo4j: "org.neo4j:neo4j:$neo4jVersion"
+		]
+	],
+	//logging
+	logging: [
+		slf4j: [
+			api: "org.slf4j:slf4j-api:$slf4jVersion",
+			jcl: "org.slf4j:jcl-over-slf4j:$slf4jVersion"
+		],
+		logback: [
+			classic: "ch.qos.logback:logback-classic:$logbackVersion"
+		]
+	],
+	google: [
+		guava: "com.google.guava:guava:$guavaVersion"
+	],
+	javax: [
+		servlet: [
+			api: "javax.servlet:javax.servlet-api:$servletVersion"
+		],
+		validation: "javax.validation:validation-api:$validationApiVersion",
+		jta: "javax.transaction:jta:$jtaVersion"
+	],
+	testing: [
+		junit: "junit:junit:$junitVersion",
+		hamcrest: [
+			core: "org.hamcrest:hamcrest-core:$hamcrestVersion",
+			library: "org.hamcrest:hamcrest-library:$hamcrestVersion"
+		],
+		mockito: [
+			core: "org.mockito:mockito-core:$mockitoVersion"
+		]
+	]
+]

@@ -13,9 +13,8 @@ configure(allprojects) {
 	apply from: "${rootDir}/dependencies.gradle"
 	group = 'com.chriswk.collection'
 
-	sourceCompatability = 1.7
-	targetCompatability = 1.7
-
+	sourceCompatability="${javaVersion}"
+	targetCompatability="${javaVersion}"
 	repositories {
 		mavenCentral()
 		mavenLocal()

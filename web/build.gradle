@@ -9,4 +9,10 @@ dependencies {
 	 			ext.libs.testing.hamcrest.library,
 	 			ext.libs.testing.mockito.core
 
+    tomcat ext.libs.tomcat.embed.core,
+           ext.libs.tomcat.embed.logging
+    tomcat(ext.libs.tomcat.embed.jasper) {
+        exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
+    }
+
 }

@@ -67,5 +67,12 @@ ext.libs = [
 		mockito: [
 			core: "org.mockito:mockito-core:$mockitoVersion"
 		]
-	]
+	],
+    tomcat: [
+        embed: [
+            core: "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            logging: "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+            jasper: "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+        ]
+    ]
 ]

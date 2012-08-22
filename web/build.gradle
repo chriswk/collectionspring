@@ -6,6 +6,7 @@ dependencies {
             ext.libs.spring.webmvc,
             ext.libs.scalate.core,
             ext.libs.scalate.web,
+            ext.libs.scalate.springmvc,
             ext.libs.jackson.mapper.asl,
             ext.libs.logging.slf4j.api,
             ext.libs.logging.logback.core,

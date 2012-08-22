@@ -27,7 +27,10 @@ ext.libs = [
         web: "org.fusesource.scalate:scalate-web:$scalateVersion",
         project: "org.fusesource.scalate:scalate-project:$scalateVersion",
         war: "org.fusesource.scalate:scalate-war:$scalateVersion",
-        core: "org.fusesource.scalate:scalate-core:$scalateVersion"
+        core: "org.fusesource.scalate:scalate-core:$scalateVersion",
+        springmvc: "org.fusesource.scalate:scalate-spring-mvc:$scalateVersion",
+        util: "org.fusesource.scalate:scalate-util:$scalateVersion",
+        test: "org.fusesource.scalate.scalate-test:$scalateVersion"
     ],
 	hibernate: [
 		core: "org.hibernate:hibernate-core:$hibernateVersion",

@@ -18,13 +18,16 @@ configure(allprojects) {
 	apply from: "${rootDir}/dependencies.gradle"
 	group = 'com.chriswk.collection'
 
-	sourceCompatability="${javaVersion}"
-	targetCompatability="${javaVersion}"
+	sourceCompatibility="${javaVersion}"
+	targetCompatibility="${javaVersion}"
 	repositories {
 		mavenCentral()
 		mavenLocal()
 		maven { url "http://repo.springsource.org/libs-release" }
         maven { url "http://repo.springsource.org/milestone" }
+	}
+	tasks.withType(Compile) {
+		options.encoding = 'UTF-8'
 	}
 }
 
